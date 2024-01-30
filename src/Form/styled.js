@@ -15,9 +15,7 @@ export const Label = styled.label`
   align-items: center;
 `;
 
-export const Special = styled.span`
-  color: ${({ theme }) => theme.color.Crimson};
-`;
+
 
 export const Select = styled.select`
   font-size: large;

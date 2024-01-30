@@ -4,7 +4,6 @@ import {
   StyledForm,
   Legend,
   Label,
-  Special,
   Select,
   Input,
   Button,
@@ -28,7 +27,7 @@ const Form = () => {
     });
   };
 
-  const [currency, setCurrency] = useState("");
+  const [currency, setCurrency] = useState("BTC");
   const [amount, setAmount] = useState("");
 
   const onFormSubmit = (event) => {
@@ -39,7 +38,7 @@ const Form = () => {
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <fieldset>
-        <Legend>Money Exchange</Legend>
+        <Legend>CRYPTO-EURO Exchange</Legend>
         {state === "loading" ? (
           <Loading>
             Please Wait...<br /> ...Loading current exchange rates
@@ -52,7 +51,7 @@ const Form = () => {
           <>
                <p>
               <Label>
-                Choose Currency:
+                Crypto You Buy:
                 <Select onChange={({ target }) => setCurrency(target.value)}>
                   {Object.keys(rates).map((currency) => (
                     <option key={currency} value={currency}>
@@ -64,12 +63,12 @@ const Form = () => {
             </p>
             <p>
               <Label>
-                Amount in EUR<Special>*</Special>:
+                Euro You Spend*:
                 <Input
                   placeholder="Enter Amount"
                   required
                   type="number"
-                  step="0.01"
+                  step="1"
                   value={amount}
                   onChange={({ target }) => setAmount(target.value)}
                 ></Input>
