@@ -2,7 +2,7 @@
   "name": "currency-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dawidgaski.github.io/currency-converter-react/",
+  "homepage": "https://github.com/thomasanders/currency-converter-react-with-clock-and-api/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
