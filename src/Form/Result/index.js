@@ -11,7 +11,7 @@ const Result = ({ result }) => {
             {result.sourceAmount.toFixed(2)}
             {"EUR"}
 
-            {"   -You Get:   "}
+            {"   -You Get :   "}
             <strong>
               {result.targetAmount.toFixed(8)}
               {result.currency}
