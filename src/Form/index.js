@@ -28,7 +28,7 @@ const Form = () => {
     });
   };
 
-  const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState("");
   const [amount, setAmount] = useState("");
 
   const onFormSubmit = (event) => {
@@ -50,7 +50,18 @@ const Form = () => {
           </Failure>
         ) : (
           <>
-            
+               <p>
+              <Label>
+                Choose Currency:
+                <Select onChange={({ target }) => setCurrency(target.value)}>
+                  {Object.keys(rates).map((currency) => (
+                    <option key={currency} value={currency}>
+                      {currency}
+                    </option>
+                  ))}
+                </Select>
+              </Label>
+            </p>
             <p>
               <Label>
                 Amount in EUR<Special>*</Special>:
@@ -64,18 +75,7 @@ const Form = () => {
                 ></Input>
               </Label>
             </p>
-            <p>
-              <Label>
-                Choose Currency:
-                <Select onChange={({ target }) => setCurrency(target.value)}>
-                  {Object.keys(rates).map((currency) => (
-                    <option key={currency} value={currency}>
-                      {currency}
-                    </option>
-                  ))}
-                </Select>
-              </Label>
-            </p>
+         
             <p>
               <Button>Calculate!</Button>
             </p>
