@@ -2,7 +2,7 @@
 ## Description
 Application for counting different currencies. 
 
-![Screen](https://github.com/thomasanders/single-money-exchange-with-clock/blob/master/screen.jpg)
+![Screen](https://github.com/thomasanders/currency-converter-react-with-clock-and-api/blob/main/public/Animation-AH.gif)
 ## Technologies used in project:
 -HTML
 -CSS
