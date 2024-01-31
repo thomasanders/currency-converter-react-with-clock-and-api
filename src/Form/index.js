@@ -41,15 +41,14 @@ const Form = () => {
         <Legend>CRYPTO-EURO Exchange</Legend>
         {state === "loading" ? (
           <Loading>
-            Please Wait...<br /> ...Loading current exchange rates
+            Please Wait...
+            <br /> ...Loading current exchange rates
           </Loading>
         ) : state === "error" ? (
-          <Failure>
-            ...Check Your internet connection
-          </Failure>
+          <Failure>...Check Your internet connection</Failure>
         ) : (
           <>
-               <p>
+            <p>
               <Label>
                 Crypto You Buy:
                 <Select onChange={({ target }) => setCurrency(target.value)}>
@@ -69,12 +68,13 @@ const Form = () => {
                   required
                   type="number"
                   step="1"
+                  min="1"
                   value={amount}
                   onChange={({ target }) => setAmount(target.value)}
                 ></Input>
               </Label>
             </p>
-         
+
             <p>
               <Button>Calculate!</Button>
             </p>
