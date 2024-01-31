@@ -1,24 +1,24 @@
-# Simply money exchange created  in React 
+# Simply Crypto exchange created  in React with added clock and api 
 ## Description
-Application for counting different currencies. 
+Application for counting different crypto currencies. 
 
 ![Screen](https://github.com/thomasanders/currency-converter-react-with-clock-and-api/blob/main/public/Animation-AH.gif)
 ## Technologies used in project:
--HTML
--CSS
--JavaScript
--BEM convention
--Grid
--React JS
--Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & -Style Loader)
--Media Queries
--Immutability
--Controlled Components
--Styled Components
--Theme Provider
--Custom Hooks
--Axios
--Async/await
+- HTML
+- CSS
+- JavaScript
+- BEM convention
+- Grid
+- React JS
+- Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & -Style Loader)
+- Media Queries
+- Immutability
+- Controlled Components
+- Styled Components
+- Theme Provider
+- Custom Hooks
+- Axios
+- Async/await
 
 ## Demo
 https://thomasanders.github.io/currency-converter-react-with-clock-and-api/
